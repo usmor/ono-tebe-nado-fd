@@ -132,7 +132,7 @@ a {
   justify-content: space-between;
   align-items: center;
   z-index: 2;
-  margin-top: 106px; */
+  margin-top: 106px;
 }
 
 .cover__description-text {
@@ -185,7 +185,6 @@ a {
   justify-content: space-between;
   gap: 25px;
   list-style: none;
-  height: 596px;
   margin-bottom: 30px;
   margin-top: 27px;
 }
@@ -193,6 +192,7 @@ a {
 .lots__card-list-item {
   position: relative;
   width: 334px;
+  height: 596px;
 }
 
 article {
