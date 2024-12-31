@@ -9,6 +9,7 @@ body {
   height: 3028px;
   margin: 0 auto;
   font-family: Raleway, sans-serif;
+  background-color: #fff;
 }
 
 h1,
@@ -24,6 +25,13 @@ li,
 blockquote {
   margin: 0;
   padding: 0;
+}
+
+h1,
+h2,
+p,
+a {
+  font-family: Raleway, sans-serif;
 }
 
 a {

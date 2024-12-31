@@ -1,19 +1,7 @@
-body {
-  background-color: #fff;
-}
-
-h1,
-h2,
-p,
-a {
-  font-family: Raleway, sans-serif;
-}
-
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  height: 293px;
   padding-right: 50px;
   padding-left: 50px;
 }
@@ -32,18 +20,18 @@ a {
   list-style: none;
 } 
 
-.header__link, 
-.footer__link,
+.header__link,
+.address__link,
 .footer__menu-link {
   border-bottom: 1px solid #000;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
+  line-height: 100%;
   text-decoration: none;
 }
 
 .header__link_active,
-.footer__link_active,
 .footer__menu-link_active {
   border-bottom: none;
   font-size: 18px;
@@ -69,12 +57,21 @@ a {
 
 .header__address {
   justify-self: end;
+}
 
+.address__link {
+  line-height: 24.3px;
+}
+
+.address__text {
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  text-decoration: none;
 }
 
 .cover {
   position: relative;
-  height: 757px;
   margin-bottom: 180px;
   padding-right: 50px;
   padding-bottom: 50px;
@@ -145,8 +142,8 @@ a {
 
 .bet-button {
   box-sizing: border-box;
-  width: 256px;
-  height: 51px;
+  min-width: 256px;
+  min-height: 51px;
   border: 1px solid #fff;
   border-radius: 0;
   padding: 12px 32px 11px 31px;
@@ -161,7 +158,6 @@ a {
 .about {
   margin-right: 24px;
   margin-left: 24px;
-
 }
 
 .lots__heading {
@@ -190,7 +186,7 @@ a {
 .lots__card-list-item {
   position: relative;
   width: 334px;
-  height: 596px;
+  min-height: 596px;
 }
 
 article {
@@ -198,7 +194,6 @@ article {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-
 }
 
 .card-link {
@@ -247,6 +242,7 @@ article {
   border-bottom: 1px solid #000;
   color: #000;
   font-size: 20px;
+  text-decoration: none;
 }
 
 .about {
@@ -281,6 +277,7 @@ article {
 }
 
 .about__title {
+  margin-bottom: 100px;
   font-weight: 700;
   font-size: 40px;
   line-height: 47px;
@@ -288,14 +285,14 @@ article {
 }
 
 .about__text {
-  margin-top: 100px;
+  margin-bottom: 24px;
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
 }
 
-.upper-paragraph-about {
-  margin-right: 5px;
+.about__text-down {
+  margin-bottom: 0;
 }
 
 .footer {
@@ -319,8 +316,14 @@ article {
   margin-top: 1px;
   margin-bottom: 115px;
   padding-right: 0;
+  line-height: 100%;
   text-align: center;
   list-style: none;
+}
+
+.footer__link,
+.footer__menu-link {
+  line-height: 24.3px;
 }
 
 .footer__social-list {
